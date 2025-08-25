@@ -1,4 +1,5 @@
 *h1*
+
 **Raportin kirjoittaminen – tiivistelmä**
 -	Tietotekniseen raporttiin tulee selittää yksityiskohtaisen tarkasti testauksen vaiheet, ympäristö, tulokset ja aika.
 -	Raportti kirjoitetaan menneessä aikamuodossa ja sen kieliasun pitää olla huoliteltu (oikeinkirjoitus ja kielioppi oikein, tekstin jakaminen kappaleisiin ja väliotsikoihin).
@@ -6,11 +7,16 @@
 -	Työvaiheet kuvataan konkreettisesti ja tarkasti.
 -	Myös virheelliset tulokset raportoidaan, pyritään ratkaisemaan ja tarvittaessa ilmoitetaan sopivalle taholle korjaamista varten.
 -	Raportti on hyvin toistettavissa: siinä kuvatun työn kulun pitäisi johtaa jokaisella testaajalla samaan lopputulokseen.
+  
 **Linux-virtuaalikoneen asentaminen**
+ 	
 ***Virtualboxin lataus ja asennus***
+
 Latasin Virtualboxin asennusohjelman osoitteesta https://www.virtualbox.org/wiki/Downloads. Etusivulla oli lueteltu usea versio ohjelmasta host-koneen käyttöjärjestelmän perusteella; tein asennuksen omalla tietokoneellani, joka on malliaan Lenovo Ideapad 3 14ADA05 ja käyttöjärjestelmältään Windows 11 Home, joten valitsin Virtualboxin version ”Windows hosts”.
 Virtualboxia asentaessa tuli ilmoitus, jonka mukaan Python Core Package ja win32api.bindings tulisi asentaa Python-bindingien toimimiseksi kunnolla. Ohjelma kuitenkin sanoi myös, että nämä voisi asentaa myöhemminkin enkä ollut varma, tultaisiinko näitä kurssilla tarvitsemaan, joten jätin asian toistaiseksi huomiotta.
+
 ***Linux Debianin lataus***
+
 Hain Debianin asennuksessa vaadittavan ison hakemalla Googlesta ”Debian live iso” ja päädyin sivulle https://www.debian.org/CD/live/. Tällä sivustolla klikkasin itseni Debian.orgin etusivulle vasemman yläkulman logosta, ja latasin levykuvan klikkaamalla Download-linkkiä. Levykuva debian-13.0.0-amd64-netinst.iso asentui muutamassa minuutissa ja oli valmis klo 20.31. Siirsin iso-tiedoston Lataukset-kansiosta kansioon C:\users\lotta\Documents\Koulutyöt\Haaga-Helia\Linux-palvelimet omaa navigointia helpottaakseni.
 ***Virtuaalikoneen asennus Virtualboxilla***
 Valitsin Virtualboxin ylälaidasta ”Machine”  ”New…” Tästä auenneeseen ikkunaan kirjoitin ensin virtuaalikoneen perustiedot: nimi (Name) ”DebianVirvaKiljunenCom”, valitsin virtuaalikoneen sijainniksi (VM Folder) taas tämän opintojakson kansion C:\Users\lotta\Documents\Koulutyöt\Haaga-Helia\Linux-palvelimet ja valitsin levykuvaksi (ISO Image) aiemmin asentamani Debian-levykuvan. Klikkasin ruksin pois ruudusta ”Proceed With Unattended Installation” ja siirryin seuraavalle välilehdelle.
